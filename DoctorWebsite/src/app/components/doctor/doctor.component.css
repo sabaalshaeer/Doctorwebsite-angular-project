@@ -1,0 +1,12 @@
+.container
+{
+  margin: 30px 30px;
+  flex-wrap: wrap;
+  display: flex;
+  grid-gap: 8px;
+  
+}
+.btn{
+  max-height: 30px;
+  border: none;
+}

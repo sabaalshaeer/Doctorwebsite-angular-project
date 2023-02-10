@@ -1,0 +1,26 @@
+<div class="container">
+  <div>
+    <mat-form-field appearance="fill" class="login">
+      <mat-label>Username</mat-label>
+      <input matInput type="text" [(ngModel)]="username">
+    </mat-form-field>
+  </div>
+
+  <div>
+    <mat-form-field appearance="fill" class="login">
+      <mat-label>Password</mat-label>
+      <input matInput type="password" [(ngModel)]="password">
+    </mat-form-field>
+  </div>
+  <div>
+    <button mat-flat-button color="primary" class="login" (click)="ui.tryRegister(username, password, true)">I'am a Doctor</button>
+  </div>
+  <div>
+    <button mat-flat-button color="primary" class="login" (click)="ui.tryRegister(username, password, false)">I'am a Patient</button>
+  </div>
+  <br>
+  <div>
+    <button mat-flat-button color="basic" class="login" (click)="ui.startLogin()">Have Account?</button>
+  </div>
+
+</div>

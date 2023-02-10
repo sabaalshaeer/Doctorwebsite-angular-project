@@ -1,0 +1,65 @@
+{
+  "users": [
+    {
+      "id": 0,
+      "username": "Hasan",
+      "password": "pass1",
+      "doctor": false
+    },
+    {
+      "id": 1,
+      "username": "Jude",
+      "password": "pass2",
+      "doctor": true
+    },
+    {
+      "id": 2,
+      "username": "Saba",
+      "password": "pass3",
+      "doctor": true
+    },
+    {
+      "id": 3,
+      "username": "Hayder",
+      "password": "pass4",
+      "doctor": false
+    }
+  ],
+  "appointments": [
+    {
+      "doctorId": 1,
+      "patientId": null,
+      "date": "2022-11-30",
+      "id": 1,
+      "slot": 1
+    },
+    {
+      "doctorId": 1,
+      "patientId": 0,
+      "date": "2023-02-10T06:00:00.000Z",
+      "slot": 0,
+      "id": 3
+    },
+    {
+      "doctorId": 1,
+      "patientId": null,
+      "date": "2023-02-11T06:00:00.000Z",
+      "slot": 0,
+      "id": 4
+    },
+    {
+      "doctorId": 2,
+      "patientId": 3,
+      "date": "2023-02-10T06:00:00.000Z",
+      "slot": 2,
+      "id": 5
+    },
+    {
+      "doctorId": 1,
+      "patientId": null,
+      "date": "2023-02-13T06:00:00.000Z",
+      "slot": 1,
+      "id": 6
+    }
+  ]
+}

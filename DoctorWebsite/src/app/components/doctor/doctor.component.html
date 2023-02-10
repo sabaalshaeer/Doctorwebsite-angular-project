@@ -1,0 +1,7 @@
+<div class="container">
+  <h2 *ngIf="ui.getLoading()">Loading your appointments</h2>
+  <!-- iterate in to the appointments and send this appointment into appointment component -->
+  <app-appointment *ngFor="let appointment of ui.getAppointments()" [appointment]="appointment"></app-appointment>
+  <app-new-appointment *ngIf="ui.isShowNewApp()"></app-new-appointment>
+  <button class="btn" color="primary" (click)="ui.startNewApp()"><mat-icon>event</mat-icon></button>
+</div>

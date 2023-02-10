@@ -1,0 +1,13 @@
+<div class="container">
+  <h2 *ngIf="ui.getLoading()">Loading your Booked appointments</h2>
+  <!-- iterate in to the appointments and send this appointment into appointment component -->
+  <app-cancel-appt *ngFor="let appointment of ui.getPatientBookedAppts()" [appointment]="appointment"></app-cancel-appt>
+</div>
+
+<div class="container">
+  <h2 *ngIf="ui.getLoading()">Loading Available appointments</h2>
+  <!-- iterate in to the appointments and send this appointment into appointment component -->
+  <app-availability *ngFor="let appointment of ui.getAppointments()" [appointment]="appointment"></app-availability>
+</div>
+
+
